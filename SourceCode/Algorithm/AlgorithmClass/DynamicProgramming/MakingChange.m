@@ -13,13 +13,33 @@
 -(void) runTheAlgorithm {
     // Define the input
     NSArray *coinsArr = [NSArray arrayWithObjects:[NSNumber numberWithInt:1],[NSNumber numberWithInt:2],[NSNumber numberWithInt:5],[NSNumber numberWithInt:10],[NSNumber numberWithInt:20],[NSNumber numberWithInt:50], nil];
-    NSInteger changeMoney = 57;
+    NSInteger changeMoney = 4;
     NSInteger minCoins = [self findMinCoinsRequiredToMakeChangeforMoney:changeMoney fromCoinsArr:coinsArr];
     [super printOutput:[NSString stringWithFormat:@"Minimum coins required for making change for money %@ from array %@ are %@",[NSNumber numberWithInteger:changeMoney],coinsArr,[NSNumber numberWithInteger:minCoins]]];
 }
 
+// M(j) = Min(M(j-v(i))) + 1 for all i such that v(i) <= j
+
 -(NSInteger) findMinCoinsRequiredToMakeChangeforMoney :(NSInteger) C fromCoinsArr :(NSArray*) coinsArr {
-    return nil;
+    NSMutableArray *minArr = [[NSMutableArray alloc] init];
+    for (int i=0; i<=C; i++) {
+        NSInteger min = MAXFLOAT;
+        if (i==0) {
+            [minArr addObject:[NSNumber numberWithInteger:0]];
+            continue;
+        }
+        for (int j=0; j<i; j++) {
+            NSInteger index = i-[coinsArr[j] integerValue];
+            if (index<0) {
+                break;
+            }
+            if (index<=min) {
+                min = index;
+            }
+        }
+        [minArr addObject:[NSNumber numberWithInteger:min+1]];
+    }
+    return [[minArr lastObject] integerValue];
 }
 
 -(NSString*) getTimeComplexity {
