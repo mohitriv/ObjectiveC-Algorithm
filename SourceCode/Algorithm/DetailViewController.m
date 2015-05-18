@@ -10,6 +10,7 @@
 #import "Constant.h"
 #import "AlgorithmParent.h"
 #import "MaxValContSubsequence.h"
+#import "MakingChange.h"
 #import "Fibonacci.h"
 #import "Power.h"
 @interface DetailViewController ()
@@ -34,7 +35,7 @@
                 ap = [MaxValContSubsequence alloc];
             }
             else if ([_nameStr isEqualToString:MAKINGCHANGE]) {
-               
+               ap = [MakingChange alloc];
             }
             else if ([_nameStr isEqualToString:FIBONACCI]) {
                 ap = [Fibonacci alloc];
