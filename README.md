@@ -1,4 +1,4 @@
 # ObjectiveC-Algorithm
 
-This project will provide the implementation of some popular algorithms in Objective-C.
-We will update this project soon.
+This project provides the implementation of some popular algorithms in Objective-C.
+We will keep updating this project.
