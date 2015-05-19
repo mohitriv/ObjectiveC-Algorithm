@@ -10,11 +10,12 @@
 #define Algorithm_Constant_h
 
 // Algorithm based constants
+#define FIBONACCI @"Fibonacci"
+#define POWER @"Power"
 #define DYNAMICPROGRAMMING @"Dynamic Programming"
 #define MAXVALCONSEQ @"Maximum value contiguous subsequence"
 #define MAKINGCHANGE @"Making Change"
-#define FIBONACCI @"Fibonacci"
-#define POWER @"Power"
+#define LONGESTINCREASINGSUBSEQ1 @"Longest Increasing Subsequence1" 
 
 // Segue based constants
 #define MAINTODETAILSEG @"MainToDetailViewSegue"

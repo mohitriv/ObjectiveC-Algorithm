@@ -13,6 +13,8 @@
 #import "MakingChange.h"
 #import "Fibonacci.h"
 #import "Power.h"
+#import "LongestIncreasingSubsequece.h"
+
 @interface DetailViewController ()
 
 @end
@@ -42,6 +44,9 @@
             }
             else if ([_nameStr isEqualToString:POWER]) {
                 ap = [Power alloc];
+            }
+            else if ([_nameStr isEqualToString:LONGESTINCREASINGSUBSEQ1]) {
+                ap = [LongestIncreasingSubsequece alloc];
             }
         }
         if (ap) {

@@ -20,6 +20,7 @@
 		5BC383821B04BE8900203230 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC383811B04BE8900203230 /* DetailViewController.m */; };
 		5BC3838A1B04D69800203230 /* AlgorithmParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC383891B04D69800203230 /* AlgorithmParent.m */; };
 		5BC3838E1B04D6A000203230 /* MaxValContSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */; };
+		5BE60E4D1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE60E4C1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		5BC383891B04D69800203230 /* AlgorithmParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmParent.m; sourceTree = "<group>"; };
 		5BC3838C1B04D6A000203230 /* MaxValContSubsequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxValContSubsequence.h; sourceTree = "<group>"; };
 		5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxValContSubsequence.m; sourceTree = "<group>"; };
+		5BE60E4B1B0B750A001B8BD3 /* LongestIncreasingSubsequece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongestIncreasingSubsequece.h; sourceTree = "<group>"; };
+		5BE60E4C1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongestIncreasingSubsequece.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,14 +158,16 @@
 		5BC3838B1B04D6A000203230 /* DynamicProgramming */ = {
 			isa = PBXGroup;
 			children = (
-				5BC3838C1B04D6A000203230 /* MaxValContSubsequence.h */,
-				5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */,
-				5B12CECD1B05F8C900290670 /* MakingChange.h */,
-				5B12CECE1B05F8C900290670 /* MakingChange.m */,
 				5B12CECA1B05DD6F00290670 /* Fibonacci.h */,
 				5B12CECB1B05DD6F00290670 /* Fibonacci.m */,
 				5B12CED01B06014F00290670 /* Power.h */,
 				5B12CED11B06014F00290670 /* Power.m */,
+				5BC3838C1B04D6A000203230 /* MaxValContSubsequence.h */,
+				5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */,
+				5B12CECD1B05F8C900290670 /* MakingChange.h */,
+				5B12CECE1B05F8C900290670 /* MakingChange.m */,
+				5BE60E4B1B0B750A001B8BD3 /* LongestIncreasingSubsequece.h */,
+				5BE60E4C1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE60E4D1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m in Sources */,
 				5BC383631B04AEB500203230 /* ViewController.m in Sources */,
 				5BC3838A1B04D69800203230 /* AlgorithmParent.m in Sources */,
 				5BC3838E1B04D6A000203230 /* MaxValContSubsequence.m in Sources */,
