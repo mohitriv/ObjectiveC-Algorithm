@@ -14,6 +14,7 @@
 #import "Fibonacci.h"
 #import "Power.h"
 #import "LongestIncreasingSubsequece.h"
+#import "OptimizedLongestIncreasingSubsequence.h"
 
 @interface DetailViewController ()
 
@@ -47,6 +48,9 @@
             }
             else if ([_nameStr isEqualToString:LONGESTINCREASINGSUBSEQ1]) {
                 ap = [LongestIncreasingSubsequece alloc];
+            }
+            else if ([_nameStr isEqualToString:LONGESTINCREASINGSUBSEQ2]) {
+                ap = [OptimizedLongestIncreasingSubsequence alloc];
             }
         }
         if (ap) {
