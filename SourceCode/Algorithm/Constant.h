@@ -15,7 +15,8 @@
 #define DYNAMICPROGRAMMING @"Dynamic Programming"
 #define MAXVALCONSEQ @"Maximum value contiguous subsequence"
 #define MAKINGCHANGE @"Making Change"
-#define LONGESTINCREASINGSUBSEQ1 @"Longest Increasing Subsequence1" 
+#define LONGESTINCREASINGSUBSEQ1 @"Longest Increasing Subsequence1"
+#define LONGESTINCREASINGSUBSEQ2 @"Longest Increasing Subsequence2"
 
 // Segue based constants
 #define MAINTODETAILSEG @"MainToDetailViewSegue"
