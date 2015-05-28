@@ -10,6 +10,7 @@
 		5B12CECC1B05DD6F00290670 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CECB1B05DD6F00290670 /* Fibonacci.m */; };
 		5B12CECF1B05F8C900290670 /* MakingChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CECE1B05F8C900290670 /* MakingChange.m */; };
 		5B12CED21B06014F00290670 /* Power.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CED11B06014F00290670 /* Power.m */; };
+		5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */; };
 		5BA49B9E1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */; };
 		5BC3835D1B04AEB500203230 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3835C1B04AEB500203230 /* main.m */; };
 		5BC383601B04AEB500203230 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3835F1B04AEB500203230 /* AppDelegate.m */; };
@@ -41,6 +42,8 @@
 		5B12CECE1B05F8C900290670 /* MakingChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakingChange.m; sourceTree = "<group>"; };
 		5B12CED01B06014F00290670 /* Power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power.h; sourceTree = "<group>"; };
 		5B12CED11B06014F00290670 /* Power.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Power.m; sourceTree = "<group>"; };
+		5B91F5061B15F2EE009CAD5B /* KnapsackProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnapsackProblem.h; sourceTree = "<group>"; };
+		5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnapsackProblem.m; sourceTree = "<group>"; };
 		5BA49B9C1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimizedLongestIncreasingSubsequence.h; sourceTree = "<group>"; };
 		5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptimizedLongestIncreasingSubsequence.m; sourceTree = "<group>"; };
 		5BC383571B04AEB500203230 /* Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +176,8 @@
 				5BE60E4C1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m */,
 				5BA49B9C1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.h */,
 				5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */,
+				5B91F5061B15F2EE009CAD5B /* KnapsackProblem.h */,
+				5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				5B12CED21B06014F00290670 /* Power.m in Sources */,
 				5B12CECF1B05F8C900290670 /* MakingChange.m in Sources */,
 				5BC383821B04BE8900203230 /* DetailViewController.m in Sources */,
+				5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

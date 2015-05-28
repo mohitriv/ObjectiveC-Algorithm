@@ -15,6 +15,7 @@
 #import "Power.h"
 #import "LongestIncreasingSubsequece.h"
 #import "OptimizedLongestIncreasingSubsequence.h"
+#import "KnapsackProblem.h"
 
 @interface DetailViewController ()
 
@@ -51,6 +52,9 @@
             }
             else if ([_nameStr isEqualToString:LONGESTINCREASINGSUBSEQ2]) {
                 ap = [OptimizedLongestIncreasingSubsequence alloc];
+            }
+            else if ([_nameStr isEqualToString:KNAPSACKPROBLEM]) {
+                ap = [KnapsackProblem alloc];
             }
         }
         if (ap) {

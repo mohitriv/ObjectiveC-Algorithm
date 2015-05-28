@@ -42,7 +42,7 @@
 }
 
 -(NSString*) getTimeComplexity {
-    return [NSString stringWithFormat:@"O(n*n)"];
+    return [NSString stringWithFormat:@"O(n*n)\n\nApplications: Box stacking and building bridges."];
 }
 
 @end
