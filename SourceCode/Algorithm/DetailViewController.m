@@ -16,6 +16,7 @@
 #import "LongestIncreasingSubsequece.h"
 #import "OptimizedLongestIncreasingSubsequence.h"
 #import "KnapsackProblem.h"
+#import "BalancePartition.h"
 
 @interface DetailViewController ()
 
@@ -55,6 +56,9 @@
             }
             else if ([_nameStr isEqualToString:KNAPSACKPROBLEM]) {
                 ap = [KnapsackProblem alloc];
+            }
+            else if ([_nameStr isEqualToString:BALANCEPARTITION]) {
+                ap = [BalancePartition alloc];
             }
         }
         if (ap) {

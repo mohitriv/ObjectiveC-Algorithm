@@ -22,6 +22,7 @@
 		5BC383821B04BE8900203230 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC383811B04BE8900203230 /* DetailViewController.m */; };
 		5BC3838A1B04D69800203230 /* AlgorithmParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC383891B04D69800203230 /* AlgorithmParent.m */; };
 		5BC3838E1B04D6A000203230 /* MaxValContSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */; };
+		5BDEE81F1B175B0A008198CF /* BalancePartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDEE81E1B175B0A008198CF /* BalancePartition.m */; };
 		5BE60E4D1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE60E4C1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		5BC383891B04D69800203230 /* AlgorithmParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmParent.m; sourceTree = "<group>"; };
 		5BC3838C1B04D6A000203230 /* MaxValContSubsequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxValContSubsequence.h; sourceTree = "<group>"; };
 		5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxValContSubsequence.m; sourceTree = "<group>"; };
+		5BDEE81D1B175B0A008198CF /* BalancePartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalancePartition.h; sourceTree = "<group>"; };
+		5BDEE81E1B175B0A008198CF /* BalancePartition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalancePartition.m; sourceTree = "<group>"; };
 		5BE60E4B1B0B750A001B8BD3 /* LongestIncreasingSubsequece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongestIncreasingSubsequece.h; sourceTree = "<group>"; };
 		5BE60E4C1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongestIncreasingSubsequece.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +181,8 @@
 				5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */,
 				5B91F5061B15F2EE009CAD5B /* KnapsackProblem.h */,
 				5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */,
+				5BDEE81D1B175B0A008198CF /* BalancePartition.h */,
+				5BDEE81E1B175B0A008198CF /* BalancePartition.m */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				5B12CECF1B05F8C900290670 /* MakingChange.m in Sources */,
 				5BC383821B04BE8900203230 /* DetailViewController.m in Sources */,
 				5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */,
+				5BDEE81F1B175B0A008198CF /* BalancePartition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

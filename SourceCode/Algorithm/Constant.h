@@ -18,6 +18,7 @@
 #define LONGESTINCREASINGSUBSEQ1 @"Longest Increasing Subsequence1"
 #define LONGESTINCREASINGSUBSEQ2 @"Longest Increasing Subsequence2"
 #define KNAPSACKPROBLEM @"0/1 Knapsack Problem"
+#define BALANCEPARTITION @"Balance Partition"
 
 // Segue based constants
 #define MAINTODETAILSEG @"MainToDetailViewSegue"
