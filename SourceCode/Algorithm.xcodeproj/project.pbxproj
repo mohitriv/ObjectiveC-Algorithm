@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B12CECC1B05DD6F00290670 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CECB1B05DD6F00290670 /* Fibonacci.m */; };
 		5B12CECF1B05F8C900290670 /* MakingChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CECE1B05F8C900290670 /* MakingChange.m */; };
-		5B12CED21B06014F00290670 /* Power.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CED11B06014F00290670 /* Power.m */; };
+		5B822E4D1B1891CA008C28D1 /* Power.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B822E4C1B1891CA008C28D1 /* Power.m */; };
 		5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */; };
 		5BA49B9E1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */; };
 		5BC3835D1B04AEB500203230 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3835C1B04AEB500203230 /* main.m */; };
@@ -41,8 +41,8 @@
 		5B12CECB1B05DD6F00290670 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
 		5B12CECD1B05F8C900290670 /* MakingChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakingChange.h; sourceTree = "<group>"; };
 		5B12CECE1B05F8C900290670 /* MakingChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakingChange.m; sourceTree = "<group>"; };
-		5B12CED01B06014F00290670 /* Power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power.h; sourceTree = "<group>"; };
-		5B12CED11B06014F00290670 /* Power.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Power.m; sourceTree = "<group>"; };
+		5B822E4B1B1891CA008C28D1 /* Power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Power.h; sourceTree = "<group>"; };
+		5B822E4C1B1891CA008C28D1 /* Power.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Power.m; sourceTree = "<group>"; };
 		5B91F5061B15F2EE009CAD5B /* KnapsackProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnapsackProblem.h; sourceTree = "<group>"; };
 		5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnapsackProblem.m; sourceTree = "<group>"; };
 		5BA49B9C1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimizedLongestIncreasingSubsequence.h; sourceTree = "<group>"; };
@@ -91,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B822E4A1B1891CA008C28D1 /* DivideAndConquer */ = {
+			isa = PBXGroup;
+			children = (
+				5B822E4B1B1891CA008C28D1 /* Power.h */,
+				5B822E4C1B1891CA008C28D1 /* Power.m */,
+			);
+			path = DivideAndConquer;
+			sourceTree = "<group>";
+		};
 		5BC3834E1B04AEB500203230 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +168,7 @@
 			children = (
 				5BC383881B04D69800203230 /* AlgorithmParent.h */,
 				5BC383891B04D69800203230 /* AlgorithmParent.m */,
+				5B822E4A1B1891CA008C28D1 /* DivideAndConquer */,
 				5BC3838B1B04D6A000203230 /* DynamicProgramming */,
 			);
 			path = AlgorithmClass;
@@ -169,8 +179,6 @@
 			children = (
 				5B12CECA1B05DD6F00290670 /* Fibonacci.h */,
 				5B12CECB1B05DD6F00290670 /* Fibonacci.m */,
-				5B12CED01B06014F00290670 /* Power.h */,
-				5B12CED11B06014F00290670 /* Power.m */,
 				5BC3838C1B04D6A000203230 /* MaxValContSubsequence.h */,
 				5BC3838D1B04D6A000203230 /* MaxValContSubsequence.m */,
 				5B12CECD1B05F8C900290670 /* MakingChange.h */,
@@ -290,12 +298,12 @@
 				5BA49B9E1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m in Sources */,
 				5BE60E4D1B0B750A001B8BD3 /* LongestIncreasingSubsequece.m in Sources */,
 				5BC383631B04AEB500203230 /* ViewController.m in Sources */,
+				5B822E4D1B1891CA008C28D1 /* Power.m in Sources */,
 				5BC3838A1B04D69800203230 /* AlgorithmParent.m in Sources */,
 				5BC3838E1B04D6A000203230 /* MaxValContSubsequence.m in Sources */,
 				5B12CECC1B05DD6F00290670 /* Fibonacci.m in Sources */,
 				5BC383601B04AEB500203230 /* AppDelegate.m in Sources */,
 				5BC3835D1B04AEB500203230 /* main.m in Sources */,
-				5B12CED21B06014F00290670 /* Power.m in Sources */,
 				5B12CECF1B05F8C900290670 /* MakingChange.m in Sources */,
 				5BC383821B04BE8900203230 /* DetailViewController.m in Sources */,
 				5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */,

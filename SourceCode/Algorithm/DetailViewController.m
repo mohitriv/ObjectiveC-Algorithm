@@ -35,7 +35,7 @@
     if (self.isMovingToParentViewController) {
         // Run the algorithm
         AlgorithmParent *ap;
-        if ([_titleStr isEqualToString:DYNAMICPROGRAMMING]) {
+        if ([_titleStr isEqualToString:DYNAMICPROGRAMMING]) {// Dynamic Programming
             if ([_nameStr isEqualToString:MAXVALCONSEQ]) {
                 ap = [MaxValContSubsequence alloc];
             }
@@ -59,6 +59,11 @@
             }
             else if ([_nameStr isEqualToString:BALANCEPARTITION]) {
                 ap = [BalancePartition alloc];
+            }
+        }
+        else if([_titleStr isEqualToString:DIVIDEANDCONQUER]) {// Divide and Conquer
+            if ([_nameStr isEqualToString:POWER]) {
+                ap = [Power alloc];
             }
         }
         if (ap) {

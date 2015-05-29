@@ -24,14 +24,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Algorithm";
     self.dataArray = [[NSMutableArray alloc] init];
-    NSArray *algoNameArr = [NSArray arrayWithObjects:FIBONACCI,POWER,MAXVALCONSEQ,MAKINGCHANGE,LONGESTINCREASINGSUBSEQ1,LONGESTINCREASINGSUBSEQ2,KNAPSACKPROBLEM,BALANCEPARTITION, nil];
-    self.sectionArray = [NSArray arrayWithObjects:DYNAMICPROGRAMMING, nil];
+    NSArray *algoNameArr = [NSArray arrayWithObjects:[NSArray arrayWithObjects:FIBONACCI,POWER,MAXVALCONSEQ,MAKINGCHANGE,LONGESTINCREASINGSUBSEQ1,LONGESTINCREASINGSUBSEQ2,KNAPSACKPROBLEM,BALANCEPARTITION, nil],[NSArray arrayWithObjects:POWER, nil], nil];
+    self.sectionArray = [NSArray arrayWithObjects:DYNAMICPROGRAMMING,DIVIDEANDCONQUER, nil];
     [self createRow:algoNameArr];
 }
 
 -(void) createRow :(NSArray*)algoNameArr {
-    for (NSString *algoName in algoNameArr) {
-        [_dataArray addObject:algoName];
+    for (NSArray *algoArr in algoNameArr) {
+        [_dataArray addObject:algoArr];
     }
 }
 
@@ -46,7 +46,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:MAINTODETAILSEG]) {
         DetailViewController *dvc = (DetailViewController*)[segue destinationViewController];
-        dvc.nameStr = [_dataArray objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+        dvc.nameStr = [[_dataArray objectAtIndex:[self.tableView indexPathForSelectedRow].section] objectAtIndex:[self.tableView indexPathForSelectedRow].row];
         dvc.titleStr = [_sectionArray objectAtIndex:[self.tableView indexPathForSelectedRow].section];
     }
 }
@@ -54,7 +54,7 @@
 #pragma mark - Table view delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [_sectionArray count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -73,13 +73,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [_dataArray count];
+    return [[_dataArray objectAtIndex:section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    cell.textLabel.text = [_dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [[_dataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     return cell;
 }
 
