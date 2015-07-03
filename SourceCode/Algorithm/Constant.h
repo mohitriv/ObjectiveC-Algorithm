@@ -18,6 +18,7 @@
 #define LONGESTINCREASINGSUBSEQ2 @"Longest Increasing Subsequence2"
 #define KNAPSACKPROBLEM @"0/1 Knapsack Problem"
 #define BALANCEPARTITION @"Balance Partition"
+#define EDITDISTANCE @"Edit Distance"
 
 #define DYNAMICPROGRAMMING @"Dynamic Programming"
 #define DIVIDEANDCONQUER @"Divide Conquer"

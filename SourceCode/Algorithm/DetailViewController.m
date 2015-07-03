@@ -17,6 +17,7 @@
 #import "OptimizedLongestIncreasingSubsequence.h"
 #import "KnapsackProblem.h"
 #import "BalancePartition.h"
+#import "EditDistance.h"
 
 @interface DetailViewController ()
 
@@ -59,6 +60,9 @@
             }
             else if ([_nameStr isEqualToString:BALANCEPARTITION]) {
                 ap = [BalancePartition alloc];
+            }
+            else if ([_nameStr isEqualToString:EDITDISTANCE]) {
+                ap = [EditDistance alloc];
             }
         }
         else if([_titleStr isEqualToString:DIVIDEANDCONQUER]) {// Divide and Conquer

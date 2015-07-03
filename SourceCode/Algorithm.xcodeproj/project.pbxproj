@@ -12,6 +12,7 @@
 		5B822E4D1B1891CA008C28D1 /* Power.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B822E4C1B1891CA008C28D1 /* Power.m */; };
 		5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */; };
 		5BA49B9E1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */; };
+		5BA4C9941B1C66DB009B4B23 /* EditDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4C9931B1C66DB009B4B23 /* EditDistance.m */; };
 		5BC3835D1B04AEB500203230 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3835C1B04AEB500203230 /* main.m */; };
 		5BC383601B04AEB500203230 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3835F1B04AEB500203230 /* AppDelegate.m */; };
 		5BC383631B04AEB500203230 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC383621B04AEB500203230 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 		5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnapsackProblem.m; sourceTree = "<group>"; };
 		5BA49B9C1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimizedLongestIncreasingSubsequence.h; sourceTree = "<group>"; };
 		5BA49B9D1B0F4AA6002DCF5D /* OptimizedLongestIncreasingSubsequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptimizedLongestIncreasingSubsequence.m; sourceTree = "<group>"; };
+		5BA4C9921B1C66DB009B4B23 /* EditDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDistance.h; sourceTree = "<group>"; };
+		5BA4C9931B1C66DB009B4B23 /* EditDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDistance.m; sourceTree = "<group>"; };
 		5BC383571B04AEB500203230 /* Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC3835B1B04AEB500203230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC3835C1B04AEB500203230 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				5B91F5071B15F2EE009CAD5B /* KnapsackProblem.m */,
 				5BDEE81D1B175B0A008198CF /* BalancePartition.h */,
 				5BDEE81E1B175B0A008198CF /* BalancePartition.m */,
+				5BA4C9921B1C66DB009B4B23 /* EditDistance.h */,
+				5BA4C9931B1C66DB009B4B23 /* EditDistance.m */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				5B12CECF1B05F8C900290670 /* MakingChange.m in Sources */,
 				5BC383821B04BE8900203230 /* DetailViewController.m in Sources */,
 				5B91F5081B15F2EE009CAD5B /* KnapsackProblem.m in Sources */,
+				5BA4C9941B1C66DB009B4B23 /* EditDistance.m in Sources */,
 				5BDEE81F1B175B0A008198CF /* BalancePartition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

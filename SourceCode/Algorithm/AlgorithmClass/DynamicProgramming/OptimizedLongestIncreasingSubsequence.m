@@ -74,7 +74,7 @@
 }
 
 -(void) deleteSameLengthElements :(NSInteger) index :(NSMutableArray*) tempArr {
-    // This seems to run in O(n) but it runs only once O(1)
+    // This seems to run in O(n) but it runs only once in O(1)
     NSInteger len = [[[tempArr objectAtIndex:index] objectForKey:@"Count"] integerValue];
     for (NSInteger i=index+1; i<[tempArr count]; i++) {
         if ([[[tempArr objectAtIndex:i] objectForKey:@"Count"] integerValue] == len) {

@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Algorithm";
     self.dataArray = [[NSMutableArray alloc] init];
-    NSArray *algoNameArr = [NSArray arrayWithObjects:[NSArray arrayWithObjects:FIBONACCI,POWER,MAXVALCONSEQ,MAKINGCHANGE,LONGESTINCREASINGSUBSEQ1,LONGESTINCREASINGSUBSEQ2,KNAPSACKPROBLEM,BALANCEPARTITION, nil],[NSArray arrayWithObjects:POWER, nil], nil];
+    NSArray *algoNameArr = [NSArray arrayWithObjects:[NSArray arrayWithObjects:FIBONACCI,POWER,MAXVALCONSEQ,MAKINGCHANGE,LONGESTINCREASINGSUBSEQ1,LONGESTINCREASINGSUBSEQ2,KNAPSACKPROBLEM,BALANCEPARTITION,EDITDISTANCE, nil],[NSArray arrayWithObjects:POWER, nil], nil];
     self.sectionArray = [NSArray arrayWithObjects:DYNAMICPROGRAMMING,DIVIDEANDCONQUER, nil];
     [self createRow:algoNameArr];
 }
