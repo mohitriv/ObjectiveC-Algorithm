@@ -17,7 +17,55 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self stringLearning];
+    
     return YES;
+}
+
+- (void)stringLearning {
+    NSString *textString = [NSString stringWithFormat:@"constant str1 str2 str3"];
+    
+    NSMutableDictionary *charDictionary = [[NSMutableDictionary alloc] init];
+    
+    NSString *tokenString = @"";
+    
+    for (int i=0; i<textString.length; i++) {
+        NSString *charStr = [NSString stringWithFormat:@"%d",[textString characterAtIndex:i]];
+        if ([charDictionary objectForKey:charStr]) {
+            NSInteger prevVal = [[charDictionary objectForKey:charStr] integerValue]+1;
+            [charDictionary setObject:[NSNumber numberWithInteger:prevVal] forKey:charStr];
+        }
+        else {
+            [charDictionary setObject:[NSNumber numberWithInteger:1] forKey:charStr];
+        }
+    }
+    
+    NSMutableArray *countArr = [[NSMutableArray alloc] init];
+    
+    for (int i=0; i<tokenString.length; i++) {
+        NSString *charKey = [NSString stringWithFormat:@"%d",[tokenString characterAtIndex:i]];
+        if ([charDictionary objectForKey:charKey]) {
+            NSNumber *val = [charDictionary objectForKey:charKey];
+            [countArr addObject:val];
+        }
+        else {
+            break;
+        }
+    }
+    
+    NSInteger minVal = 0;
+    if ([countArr count]==tokenString.length && [countArr count]>0) {
+        minVal = [[countArr objectAtIndex:0] integerValue];
+        for (int i=1; i<[countArr count]; i++) {
+            minVal = MIN(minVal, [[countArr objectAtIndex:i] integerValue]);
+        }
+        NSLog(@"Toekn occurs %ld times in a string",minVal);
+    }
+    else {
+        NSLog(@"Token does not exist or empty");
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

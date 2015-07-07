@@ -24,7 +24,7 @@
     [super printOutput:[NSString stringWithFormat:@"Edit Distance cost converting array %@ into array %@ is %ld if Cost for insertion, deletion and replacement are %ld %ld %ld respectively",aArr,bArr,minCost,cI,cD,cR]];
 }
 
-// E(i,j) = Min {cD + E(i-1,j), E(i,j-1) + cI, E(i-1,j-1), E(i-1,j-1) + cR}
+// E(i,j) = Min {cD + E(i-1,j), E(i,j-1) + cI, E(i-1,j-1) if a[i]=a[j], E(i-1,j-1) + cR if a[i]!=a[j]}
 
 -(NSInteger) findEditDistanceBetween :(NSArray*) aArr andArray:(NSArray*)bArr {
     NSMutableArray *edArr = [[NSMutableArray alloc] init];
