@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Mohit Trivedi. All rights reserved.
 //
 
-// change 1
 
 #import <UIKit/UIKit.h>
 
