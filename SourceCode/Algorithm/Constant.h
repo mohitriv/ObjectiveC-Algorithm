@@ -26,6 +26,6 @@
 // Segue based constants
 #define MAINTODETAILSEG @"MainToDetailViewSegue"
 
-// Dev pushes again
+// Dev pushes
 
 #endif
