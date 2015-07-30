@@ -5,7 +5,6 @@
 //  Created by Mohit Trivedi on 14/05/15.
 //  Copyright (c) 2015 Mohit Trivedi. All rights reserved.
 //
-// Feature 1
 
 
 #import <UIKit/UIKit.h>
