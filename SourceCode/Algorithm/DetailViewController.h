@@ -10,7 +10,7 @@
 
 
 // Feature 1
-// HEAD1
+// HEAD
 
 
 #import <UIKit/UIKit.h>
